@@ -1,12 +1,22 @@
 import { siteConfig } from "@/config/site";
+import { useBusinessStatus } from "@/hooks/useBusinessStatus";
 
 type Props = { onOpenCart: () => void };
 
 export function Hero({ onOpenCart }: Props) {
+  const status = useBusinessStatus();
+
   return (
     <header className="hero" id="inicio">
       <div className="hero-copy">
-        <p className="eyebrow">● Manta, Ecuador · sabor nocturno</p>
+        <div className={`status-badge ${status.isOpen ? "open" : "closed"}`}>
+          <span />
+          <div>
+            <strong>{status.label}</strong>
+            <small>{status.detail}</small>
+          </div>
+        </div>
+        <p className="eyebrow">Manta, Ecuador · sabor nocturno</p>
         <h1>El antojo ya sabe dónde encontrarte.</h1>
         <p>
           Hamburguesas, alitas, hot dogs y papas con pedidos directos por WhatsApp.
