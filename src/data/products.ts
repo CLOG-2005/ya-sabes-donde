@@ -1,0 +1,81 @@
+import type { Category, Product } from "@/types";
+
+export const categories: Category[] = [
+  "Todos",
+  "Hamburguesas",
+  "Alitas",
+  "Hot Dogs",
+  "Papas",
+  "Bebidas",
+];
+
+export const products: Product[] = [
+  {
+    id: "bacon-jam",
+    name: "Bacon Jam Burger",
+    category: "Hamburguesas",
+    description: "Carne de res, queso, reducción de café y mermelada de tocino.",
+    price: 5,
+    emoji: "🍔",
+    tag: "Favorita",
+  },
+  {
+    id: "oklahoma",
+    name: "Oklahoma",
+    category: "Hamburguesas",
+    description: "Carne, cebolla caramelizada, cheddar y salsa de la casa.",
+    price: 4,
+    emoji: "🍔",
+  },
+  {
+    id: "sweet-bbq",
+    name: "Sweet BBQ Burger",
+    category: "Hamburguesas",
+    description: "Salsa BBQ, queso americano y tocino gratinado.",
+    price: 5,
+    emoji: "🍔",
+    tag: "Nueva",
+  },
+  {
+    id: "alitas-10",
+    name: "10 alitas",
+    category: "Alitas",
+    description: "Alitas crocantes, salsa a elección y papas.",
+    price: 9,
+    emoji: "🍗",
+  },
+  {
+    id: "alitas-20",
+    name: "20 alitas",
+    category: "Alitas",
+    description: "Veinte alitas para compartir con dos salsas.",
+    price: 16,
+    emoji: "🍗",
+    tag: "Combo",
+  },
+  {
+    id: "chili-dog",
+    name: "Chili Cheese Dog",
+    category: "Hot Dogs",
+    description: "Salchicha, chili, queso americano y pan tostado.",
+    price: 4.5,
+    emoji: "🌭",
+    tag: "Picante",
+  },
+  {
+    id: "papas-cheddar",
+    name: "Papas Cheddar Bacon",
+    category: "Papas",
+    description: "Papas crocantes con cheddar y bacon bits.",
+    price: 4.5,
+    emoji: "🍟",
+  },
+  {
+    id: "cola",
+    name: "Cola personal",
+    category: "Bebidas",
+    description: "Bebida fría para acompañar el pedido.",
+    price: 0.75,
+    emoji: "🥤",
+  },
+];
