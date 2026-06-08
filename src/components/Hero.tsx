@@ -1,3 +1,4 @@
+import "@/status.css";
 import { siteConfig } from "@/config/site";
 import { useBusinessStatus } from "@/hooks/useBusinessStatus";
 
